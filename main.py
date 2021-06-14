@@ -16,6 +16,7 @@ def printBoard(squares):
 					print(squares[i][j] + ' ', end='')
 		print('')
 
+
 def gameLogic(arr, let):
 	sameSpot = True
 
@@ -39,7 +40,7 @@ def gameLogic(arr, let):
 			print('That spot is taken. Try again!')
 		
 
-def checkWinner(arr, let):
+def checkWinner():
 	if ((arr[0][0] == let and arr[0][1] == let and arr[0][2] == let) or
 	   (arr[1][0] == let and arr[1][1] == let and arr[1][2] == let) or
 	   (arr[2][0] == let and arr[2][1] == let and arr[2][2] == let) or
@@ -50,7 +51,7 @@ def checkWinner(arr, let):
 	   (arr[0][2] == let and arr[1][1] == let and arr[2][0] == let)):
 	   return False
 	else:
-		return True
+		 return True
 
 
 
@@ -81,6 +82,7 @@ while noWinner and count < 9:
 			player = 'X'
 
 print('The winner is ' + player)
+
 
 
 
